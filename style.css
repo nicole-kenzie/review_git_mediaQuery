@@ -17,6 +17,8 @@ div {
     border: 2px dashed white;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .div1 {
@@ -29,4 +31,24 @@ div {
 
 .div3 {
     background-color: green;
+}
+
+@media (max-width: 375px) {
+    div {
+        width: 200px;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .div1 {
+        background-color: #fa0;
+    }
+    
+    .div2 {
+        background-color: #2f5a7e;
+    }
+    
+    .div3 {
+        background-color: #0f0;
+    }
 }
